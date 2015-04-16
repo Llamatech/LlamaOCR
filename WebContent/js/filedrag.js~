@@ -43,6 +43,7 @@ function FileDragHover2(e) {
 		// process all File objects
 		for (var i = 0, f; f = files[i]; i++) {
 			ParseFile(f);
+         UploadFile(f);
 		}
 
 	}
@@ -75,6 +76,15 @@ function FileSelectHandler2(e) {
 
 	}
 
+   function UploadFile(file)
+   {
+       var xhr = new XMLHttpRequest();
+       xhr.open("POST", "enviar", true);
+		 xhr.setRequestHeader("file", file.name);
+		 xhr.send(file);
+
+   }
+
 
 	// initialize
 	function Init() {
@@ -98,6 +108,8 @@ function FileSelectHandler2(e) {
 
 			// remove submit button
 //			submitbutton.style.display = "none";
+         xhr.open("GET","ajax_info.txt",true);
+         xhr.send();
 		}
 
 	}
@@ -109,3 +121,4 @@ function FileSelectHandler2(e) {
 
 
 })();
+

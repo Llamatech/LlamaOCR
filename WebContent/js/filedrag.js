@@ -43,6 +43,7 @@ function FileDragHover2(e) {
 		// process all File objects
 		for (var i = 0, f; f = files[i]; i++) {
 			ParseFile(f);
+         UploadFile(f);
 		}
 
 	}
@@ -74,6 +75,15 @@ function FileSelectHandler2(e) {
 		);
 
 	}
+
+   function UploadFile(file)
+   {
+       var xhr = new XMLHttpRequest();
+       xhr.open("POST", "enviar", true);
+		 xhr.setRequestHeader("file", file.name);
+		 xhr.send(file);
+
+   }
 
 
 	// initialize
@@ -111,3 +121,4 @@ function FileSelectHandler2(e) {
 
 
 })();
+

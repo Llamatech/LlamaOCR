@@ -91,8 +91,19 @@
 					<div class="triangle"></div>
 				</div>
 				<div class="row">
+               <div class="col-md-4">
+						<div class="contact-discription">
+							<h4>Cargar un diccionario</h4>
+							<p>
+								Bienvenido al decodificador de LlamaTech! Es hora de que cargue el diccionario que se utilizará para decodificar los textos que desea recuperar. 
+ 								<br>
+ 								<br>
+								Puede copiar y pegar su diccionario en el siguiente cuadro de texto, separando las palabras por espacios, o puede cargar o arrastrar un archivo que contenga una palabra por línea
+							</p>
+						</div>
+					</div>
 					<div class="col-md-8">
-						<form class="form" action="UploadServlet" method="post" enctype="multipart/form-data">
+						<form class="form" action="enviar" method="post" enctype="multipart/form-data">
 							<div class="row">
 								<div class="text col-md-12">
 									<textarea name="text" placeholder="Message"></textarea>
@@ -113,27 +124,6 @@
 								<input id="submitBtn" type="submit" value="Send Now" />
 							</div>
 						</form>
-					</div>
-					<div class="col-md-4">
-						<div class="contact-discription">
-							<h4>More About Us!</h4>
-							<p>
-								Suspendisse sit amet tincidunt dolor, at elementum augue. In non diam nulla. Nulla sit amet ipsum finibus purus tempor pellentesque.
-								<br>
-								<br>
-								<strong>Mailing Address:</strong>
-								<br>
-								No 123, New street, Sed sit amet arcu ut quam, 10550.
-								<br>
-								<br>
-								Tel: 010 020 0340
-								<br>
-								Email: info@company.com
-								<br>
-								<br>
-								Morbi tincidunt nibh ante, ut lacinia turpis euismod vel. Nam suscipit justo sit amet vehicula elementum.
-							</p>
-						</div>
 					</div>
 				</div>
 			</div>
@@ -208,3 +198,4 @@
 		</script>
 	</body>
 </html>
+

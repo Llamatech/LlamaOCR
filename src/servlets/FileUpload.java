@@ -1,4 +1,4 @@
-package words_server;
+package servlets;
 
 //Import required java libraries
 import java.io.*;
@@ -17,6 +17,10 @@ import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
 import org.apache.commons.io.output.*;
 
+import backend.WordProcessor;
+
+import com.llama.tech.utils.list.LlamaArrayList;
+
 @WebServlet(name = "Foo", urlPatterns = {"/enviar/*"})
 
 public class FileUpload extends HttpServlet 
@@ -27,6 +31,7 @@ public class FileUpload extends HttpServlet
 	private int maxFileSize = 50 * 1024;
 	private int maxMemSize = 4 * 1024;
 	private File file;
+	private WordProcessor proc;
 
 	public void init() {
 		// Get the file location where it would be stored.
@@ -96,16 +101,20 @@ public class FileUpload extends HttpServlet
 					}
 					fi.write(file);
 					out.println("Uploaded Filename: " + fileName + "<br>");
+                    LlamaArrayList<String> list = new LlamaArrayList<String>(10);
 					FileInputStream fis = new FileInputStream(file);
 					try(BufferedReader br = new BufferedReader(new InputStreamReader(fis, "UTF8")))
 					{
 						String line;
 						while((line = br.readLine()) != null)
 						{
-							out.println("<p>"+line+"</p>");
+							out.println(line);
+							list.addAlFinal(line);
 						}
 					}
 					
+					proc = WordProcessor.getInstance();
+					proc.setDictionary(list);
 					
 					
 				}
