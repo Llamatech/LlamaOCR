@@ -27,6 +27,7 @@ html {
 	font-weight:normal;
 }
 
+<<<<<<< HEAD
 .scrollable-menu {
     height: auto;
     max-height: 200px;
@@ -35,6 +36,10 @@ html {
 
 #top {
     margin-top: -50px; 
+=======
+#top {
+    margin-top: -50px;
+>>>>>>> 7fe12a07a8aa0b489c9ec58fc069fecf996dda52
 }
 
 .navbar-default {
@@ -417,6 +422,7 @@ html {
     line-height: 24px;
 }
 
+<<<<<<< HEAD
 
 .textbox { 
     border: 3px groove #0A0; 
@@ -426,6 +432,8 @@ html {
   } 
 
 
+=======
+>>>>>>> 7fe12a07a8aa0b489c9ec58fc069fecf996dda52
 .projects img {
     border: 4px solid #eee;
     max-width: 100%;
@@ -674,7 +682,10 @@ html {
     color: #fff;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7fe12a07a8aa0b489c9ec58fc069fecf996dda52
 #cta p {
     font-family: 'Dosis';
     font-size: 22px;
@@ -757,6 +768,7 @@ textarea {
     outline:none;
 }
 
+<<<<<<< HEAD
 
 .name-textarea textarea
 {
@@ -824,11 +836,14 @@ select
     /*color: #9E9E9E;*/
 }
 
+=======
+>>>>>>> 7fe12a07a8aa0b489c9ec58fc069fecf996dda52
 .submit input:hover {
     background-color: #b1e67f;
     border-color: #98d361;
 }
 
+<<<<<<< HEAD
 .carpeta input:hover {
     background-color: #FFD54A;
     border-color: #FFB429;
@@ -852,6 +867,8 @@ select
     outline:none;
 }
 
+=======
+>>>>>>> 7fe12a07a8aa0b489c9ec58fc069fecf996dda52
 .fileUpload {
 	position: relative;
 	overflow: hidden;
@@ -929,6 +946,7 @@ form {
     line-height: 20px;
 }
 
+<<<<<<< HEAD
 .bienvenida {
     margin-top: 60px;
     margin-bottom: 80px;
@@ -967,6 +985,8 @@ form {
 
 
 
+=======
+>>>>>>> 7fe12a07a8aa0b489c9ec58fc069fecf996dda52
 #templatemo-map {
     width: 100%;
     height: 380px;
@@ -987,8 +1007,11 @@ footer {
     color: #fff;
 }
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 7fe12a07a8aa0b489c9ec58fc069fecf996dda52
 .copyright-text a {
     color: #fff;
 }
@@ -1248,6 +1271,7 @@ footer {
         margin-top: 120px;
     }
 }
+<<<<<<< HEAD
 
 .css-treeview ul,
 .css-treeview li
@@ -1367,3 +1391,5 @@ footer {
 		}
 	}
 }
+=======
+>>>>>>> 7fe12a07a8aa0b489c9ec58fc069fecf996dda52

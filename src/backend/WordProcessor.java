@@ -1,5 +1,6 @@
 package backend;
 
+<<<<<<< HEAD
 import java.io.File;
 import java.util.Iterator;
 
@@ -12,11 +13,16 @@ import com.llama.tech.utils.dict.LlamaDict.UnhashableTypeException;
 import com.llama.tech.utils.list.Lista;
 import com.llama.tech.utils.list.LlamaArrayList;
 import com.llama.tech.utils.list.LlamaIterator;
+=======
+import com.llama.tech.utils.dict.Dictionary;
+import com.llama.tech.utils.list.Lista;
+>>>>>>> 7fe12a07a8aa0b489c9ec58fc069fecf996dda52
 import com.llama.tech.utils.tree.LlamaTrie;
 
 public class WordProcessor 
 {
 	private static WordProcessor instance;
+<<<<<<< HEAD
 	private LlamaTrie<Lista<Archivo>> trie;
 	private Dictionary<String,Carpeta> carpetas;
 	private Dictionary<String,Archivo> archivosAux;
@@ -60,6 +66,13 @@ public class WordProcessor
 		return carpetas.getValues();
 	}
 
+=======
+	
+	private LlamaTrie<Archivo> trie;
+	
+	private Dictionary<String,Carpeta> carpetas;
+	
+>>>>>>> 7fe12a07a8aa0b489c9ec58fc069fecf996dda52
 	public static WordProcessor getInstance()
 	{
 		if(instance == null)
@@ -68,9 +81,13 @@ public class WordProcessor
 		}
 		return instance;
 	}
+<<<<<<< HEAD
 
 	
 
+=======
+	
+>>>>>>> 7fe12a07a8aa0b489c9ec58fc069fecf996dda52
 	public void setDictionary(Lista<String> list)
 	{
 		for(String s : list)
@@ -79,6 +96,7 @@ public class WordProcessor
 		}
 		System.out.println(trie);
 	}
+<<<<<<< HEAD
 
 	public void agregarArchivo(String texto, String carpeta, String nombre)
 	{
@@ -226,11 +244,45 @@ public class WordProcessor
 		fname = null;
 		folder = null;
 		
+=======
+	
+	public String decodeDocument(String doc)
+	{
+		return null;
+	}
+	
+	public Lista<Archivo> getDocumentsByIndex(String prefix)
+	{
+		return null; 
+	}
+	
+	public void eliminarCarpeta(String nombre)
+	{
+		
+	}
+	
+	public void añadirCarpeta(String nombre, String padre)
+	{
+		
+	}
+	
+	public Lista<Archivo> darArchivosPorPalabra(String palabra)
+	{
+		return null;
+	}
+	
+	public Lista<Archivo> darArchivosPorPrefijo(String prefijo)
+	{
+		return null;
+>>>>>>> 7fe12a07a8aa0b489c9ec58fc069fecf996dda52
 	}
 	
 	
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> 7fe12a07a8aa0b489c9ec58fc069fecf996dda52
 }

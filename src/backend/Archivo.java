@@ -1,6 +1,10 @@
 package backend;
 
+<<<<<<< HEAD
 public class Archivo implements Comparable<Archivo>
+=======
+public class Archivo 
+>>>>>>> 7fe12a07a8aa0b489c9ec58fc069fecf996dda52
 {
 	private String nombre;
 	
@@ -8,6 +12,7 @@ public class Archivo implements Comparable<Archivo>
 	
 	private boolean esRecuperado;
 	
+<<<<<<< HEAD
 	//TODO: hacer que conozca a su carpeta para poder guarar el recuperado en su lugar
 	
 	public Archivo(String pnombre, String ptexto, boolean esRecuper)
@@ -16,6 +21,11 @@ public class Archivo implements Comparable<Archivo>
 			nombre = pnombre+".txt";
 		else
 			nombre = pnombre+".ocr";
+=======
+	public Archivo(String pnombre, String ptexto, boolean esRecuper)
+	{
+		nombre = pnombre;
+>>>>>>> 7fe12a07a8aa0b489c9ec58fc069fecf996dda52
 		texto = ptexto;
 		esRecuperado = esRecuper;
 	}
@@ -43,11 +53,14 @@ public class Archivo implements Comparable<Archivo>
 	public void setEsRecuperado(boolean esRecuperado) {
 		this.esRecuperado = esRecuperado;
 	}
+<<<<<<< HEAD
 
 	@Override
 	public int compareTo(Archivo o) {
 		return nombre.compareTo(o.getNombre());
 	}
+=======
+>>>>>>> 7fe12a07a8aa0b489c9ec58fc069fecf996dda52
 	
 	
 }

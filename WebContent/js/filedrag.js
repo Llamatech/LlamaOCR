@@ -59,7 +59,10 @@ function FileSelectHandler2(e) {
 		// process all File objects
 		for (var i = 0, f; f = files[i]; i++) {
 			ParseFile(f);
+<<<<<<< HEAD
          UploadFile(f);
+=======
+>>>>>>> 7fe12a07a8aa0b489c9ec58fc069fecf996dda52
 		}
 
 	}
@@ -79,6 +82,7 @@ function FileSelectHandler2(e) {
 
    function UploadFile(file)
    {
+<<<<<<< HEAD
       var formData = new FormData();
       //var fname = $id("fname").value;
       //var folder = $id("folder-sel").value;
@@ -89,6 +93,13 @@ function FileSelectHandler2(e) {
       var req = $id("myForm").action;
       xhr.open("POST", ""+req, true);
 		xhr.send(formData);
+=======
+       var xhr = new XMLHttpRequest();
+       xhr.open("POST", "enviar", true);
+		 xhr.setRequestHeader("file", file.name);
+		 xhr.send(file);
+
+>>>>>>> 7fe12a07a8aa0b489c9ec58fc069fecf996dda52
    }
 
 
@@ -128,5 +139,8 @@ function FileSelectHandler2(e) {
 
 })();
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 7fe12a07a8aa0b489c9ec58fc069fecf996dda52
