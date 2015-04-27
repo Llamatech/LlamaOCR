@@ -108,7 +108,10 @@
                         </div>
                      </div>
                      <div class="col-md-7">
-                     	<textarea disabled name="text" placeholder="Message">%p</textarea>
+                     	<textarea id="fileT" name="text" placeholder="Message"></textarea>
+                     	 <div class="submit" align="right">
+							<input id="decode" type="button" value="Decodificar" name="" onclick="decode(this)" style="visibility:hidden"/>
+						</div>
                      </div>
                   </div>
                </div>
@@ -182,9 +185,47 @@
                       alert(""+person);
                   }
                  }
-                  document.getElementById("uploadBtn").onchange = function() {
+                    document.getElementById("uploadBtn").onchange = function() {
                   	document.getElementById("uploadFile").value = this.value;
                   };
+
+                  function replaceText(elmnt)
+                  {
+                       var xmlhttp;
+                       var file = elmnt.id;
+                       alert(""+file)
+                       if(strEndsWith(file ".ocr"))
+                       {
+                            document.getElementById("decode").style.visibility = "visible";
+                            document.getElementById("decode").setAttribute("name", ""+file);
+                       }
+                       else
+                       {
+                            document.getElementById("decode").style.visibility = "hidden";
+                            document.getElementById("decode").setAttribute("name", "");
+                       }
+                       if (window.XMLHttpRequest)
+                       {// code for IE7+, Firefox, Chrome, Opera, Safari
+                           xmlhttp=new XMLHttpRequest();
+                       }
+                       xmlhttp.onreadystatechange=function()
+                       {
+                          if (xmlhttp.readyState==4 && xmlhttp.status==200)
+                          {
+                             document.getElementById("fileT").innerHTML=xmlhttp.responseText;
+                          }
+                       }
+                       xmlhttp.open("GET","verArchivo?q=" + file, true);
+                       xmlhttp.send();
+                    }
+
+                  function strEndsWith(str, suffix) 
+                  {
+                      return str.match(suffix+"$")==suffix;
+                  }
+
+                  //function decode(elmnt)
+                  
                </script>
             </body>
          </html>

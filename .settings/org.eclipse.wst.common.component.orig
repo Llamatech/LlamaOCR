@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="tareas_server">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <property name="java-output-path" value="/tareas_server/build/classes"/>
+<<<<<<< HEAD
+        <property name="context-root" value="llama_ocr"/>
+=======
+<<<<<<< HEAD
+        <property name="context-root" value="llama_ocr"/>
+=======
+        <property name="context-root" value="ROOT"/>
+>>>>>>> 7fe12a07a8aa0b489c9ec58fc069fecf996dda52
+>>>>>>> 8c36b6a5ac97aa884f40b5158ef0ea0005cbb0bd
+    </wb-module>
+</project-modules>

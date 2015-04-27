@@ -1,0 +1,148 @@
+package backend;
+
+<<<<<<< HEAD
+import com.llama.tech.misc.XMLFormat;
+import com.llama.tech.utils.list.Lista;
+import com.llama.tech.utils.list.LlamaArrayList;
+
+public class Carpeta extends XMLFormat implements Comparable<Carpeta>
+=======
+import com.llama.tech.utils.list.Lista;
+<<<<<<< HEAD
+import com.llama.tech.utils.list.LlamaArrayList;
+=======
+>>>>>>> 7fe12a07a8aa0b489c9ec58fc069fecf996dda52
+
+public class Carpeta implements Comparable<Carpeta>
+>>>>>>> 8c36b6a5ac97aa884f40b5158ef0ea0005cbb0bd
+{
+	private Lista<String> carpetasHijas;
+	
+	private String nombre;
+	
+	private boolean expandida;
+	
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 8c36b6a5ac97aa884f40b5158ef0ea0005cbb0bd
+	public Lista<String> getArchivos() {
+		return archivos;
+	}
+
+	private String carpetaPadre;
+	
+	private Lista<String> archivos;
+	
+	public Carpeta(String pNombre, String pPadre)
+	{
+		nombre = pNombre;
+		expandida = false;
+		carpetaPadre = pPadre;
+		archivos = new LlamaArrayList<String>(10);
+		carpetasHijas = new LlamaArrayList<String>(10);
+		
+	}
+	
+	public void eliminarCarpetaHija(String c)
+	{
+		carpetasHijas.remove(c);
+	}
+	
+<<<<<<< HEAD
+=======
+=======
+	private String carpetaPadre;
+	
+	private Lista<Archivo> archivos;
+	
+	public void eliminarCarpetaHija(Carpeta c)
+	{
+		
+	}
+	
+>>>>>>> 7fe12a07a8aa0b489c9ec58fc069fecf996dda52
+>>>>>>> 8c36b6a5ac97aa884f40b5158ef0ea0005cbb0bd
+	public void agregarHijo(String nombre)
+	{
+		carpetasHijas.addAlFinal(nombre);
+	}
+
+	public Lista<String> getCarpetasHijas() {
+		return carpetasHijas;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public boolean isExpandida() {
+		return expandida;
+	}
+
+	public void setExpandida(boolean expandida) {
+		this.expandida = expandida;
+	}
+
+	public String getCarpetaPadre() {
+		return carpetaPadre;
+	}
+
+	public void setCarpetaPadre(String carpetaPadre) {
+		this.carpetaPadre = carpetaPadre;
+	}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 8c36b6a5ac97aa884f40b5158ef0ea0005cbb0bd
+	
+	public void agregarArchivo(String archivo)
+	{
+		archivos.addAlFinal(archivo);
+	}
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 7fe12a07a8aa0b489c9ec58fc069fecf996dda52
+>>>>>>> 8c36b6a5ac97aa884f40b5158ef0ea0005cbb0bd
+
+	@Override
+	public int compareTo(Carpeta o) {
+		// TODO Auto-generated method stub
+<<<<<<< HEAD
+		return nombre.compareTo(o.getNombre());
+	}
+
+	@Override
+	public void readXML() 
+	{
+		
+	}
+
+	@Override
+	public String toXML() 
+	{
+		for(String s: archivos)
+		{
+			System.out.println(s);
+		}
+		String content = "<folder name = \""+nombre+"\">\n";
+		content += "<files>\n"+archivos.toXML()+"</files>\n";
+		content += "<folders>\n"+carpetasHijas.toXML()+"</folders>\n";
+		content += "</folder>\n";
+		return content;
+=======
+<<<<<<< HEAD
+		return nombre.compareTo(o.getNombre());
+=======
+		return 0;
+>>>>>>> 7fe12a07a8aa0b489c9ec58fc069fecf996dda52
+>>>>>>> 8c36b6a5ac97aa884f40b5158ef0ea0005cbb0bd
+	}
+	
+	
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
+<![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en">
+<![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+	<!--<![endif]-->
+	<head>
+		<!--
+		Timeline Template
+		http://www.templatemo.com/preview/templatemo_427_timeline
+		-->
+		<title>Timeline - Free Responsive Template</title>
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/templatemo-style.css">
+
+		<!-- JavaScripts -->
+		<script src="js/vendor/jquery-1.10.2.min.js"></script>
+		<script src="js/vendor/modernizr.min.js"></script>
+		<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM"></script>
+
+	</head>
+	<body>
+
+		<header class="site-header" id="top">
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container">
+					<div class="row">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+								<i class="fa fa-bars"></i>
+							</button>
+							<div class="logo-wrapper">
+								<a class="navbar-brand" href="#templatemo">
+								<p>
+									L<em>lamatech</em>
+								</p> </a>
+							</div>
+						</div>
+						<div class="collapse navbar-collapse" id="main-menu">
+							<ul class="nav navbar-nav navbar-right">
+								<li>
+<<<<<<< HEAD
+									<span></span><a href="buscar.html" class="portfolio">Buscar</a>
+								</li>
+								<li>
+									<span></span><a href="menu?q=sistema" class="map">Archivos</a>
+								</li>
+								<li>
+									<span></span><a href="menu?q=cargar" class="contact">Decodificar</a>
+=======
+									<span></span><a href="#top" class="home"></a>
+								</li>
+								<li>
+									<span></span><a href="#first-section" class="about"></a>
+								</li>
+								<li>
+									<span></span><a href="#second-section" class="portfolio">Buscar</a>
+								</li>
+								<li>
+									<span></span><a href="#map" class="map">Archivos</a>
+								</li>
+								<li>
+									<span></span><a href="#third-section" class="contact">Decodificar</a>
+>>>>>>> 8c36b6a5ac97aa884f40b5158ef0ea0005cbb0bd
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<div id="big-banner">
+
+		</div>
+
+		<div id="third-section">
+			<div class="heading">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h2>Mensaje decodificado</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="third-section3">
+			<div class="container">
+				<div class="row">
+					<div class="triangle"></div>
+				</div>
+				<div class="row">
+					<div class="col-md-8">
+						<form class="form" action="enviar" method="post" enctype="multipart/form-data">
+							<div class="row">
+								<div class="info">
+									<label>Texto original:</label>		
+								</div>
+								<div class="text col-md-12">
+									<textarea name="text" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce quis tincidunt est. Aenean viverra rutrum dolor. Ut aliquet, velit quis sodales congue, odio libero vestibulum orci, vel euismod orci metus sed metus. Aenean in mauris at lacus vulputate faucibus. Suspendisse potenti. Nullam id dolor turpis. Sed tristique magna vel dui blandit consectetur. Ut in ex aliquam, fermentum massa a, porta est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse maximus augue vitae semper bibendum.
+
+Pellentesque consequat mauris ac purus aliquet, a pulvinar turpis faucibus. Donec efficitur est in mauris euismod feugiat. Mauris in iaculis odio, vel luctus tortor. Suspendisse hendrerit mi sed vestibulum eleifend. Etiam mattis odio sed nunc vestibulum, vel vestibulum ipsum aliquet. Aliquam at odio aliquam, sollicitudin mauris in, semper urna. Etiam vulputate enim diam, at tincidunt orci accumsan ac. Donec semper enim sapien. Praesent ut nunc gravida, congue nisi ut, consequat erat. Aenean varius faucibus lorem, et efficitur erat porta vitae. Nam molestie est in elit aliquet placerat. Ut sed lacinia purus, et luctus ligula. Sed feugiat libero ultrices, ullamcorper mauris eu, vehicula felis. Aenean ligula ante, ullamcorper eget dictum vel, placerat ac nisl. Duis laoreet augue neque. Mauris aliquam lacinia tincidunt.
+
+Aliquam erat volutpat. Duis velit mauris, malesuada in porta vitae, gravida ultricies turpis. Proin rutrum dui tortor, ac lacinia enim porttitor sed. Phasellus feugiat nunc quis dui scelerisque porta. Nam accumsan hendrerit tortor in porta. Integer blandit tellus in est posuere, a pulvinar lacus vehicula. Aliquam erat volutpat. Nunc ac euismod risus. Cras in eros purus. Donec sodales magna non vulputate sodales. Sed volutpat mollis purus, eget feugiat est lobortis eu.
+
+Vestibulum fringilla malesuada elit, sed vehicula turpis rhoncus egestas. Proin et turpis magna. Integer ac arcu nec tellus fringilla iaculis. Nulla sed odio purus. Sed ut mi nec nisl ornare dictum sed id ex. Nunc placerat dapibus tristique. Donec nec ullamcorper libero. Nullam imperdiet nunc vel est dapibus, id interdum ipsum pretium. Nullam eros mauris, pellentesque vitae nunc quis, iaculis venenatis tortor. Aenean in dui tempor, semper turpis quis, pellentesque risus. Donec mollis nulla et libero dignissim scelerisque. Nulla facilisi. Donec sit amet vulputate enim. Phasellus ante sapien, sagittis in lorem id, molestie aliquam sem.
+
+Nulla faucibus, mi tincidunt pharetra mollis, metus ipsum pharetra lorem, eu convallis neque ex sed ipsum. Sed consectetur, orci condimentum pharetra feugiat, risus sem malesuada nisl, ac sagittis est sapien sit amet velit. Morbi efficitur, mauris sit amet consectetur fermentum, libero tortor efficitur sem, nec tincidunt dolor mi vestibulum dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam consectetur purus et imperdiet malesuada. Sed mattis tortor interdum, posuere mi vitae, porta velit. Praesent ipsum orci, finibus id rhoncus non, porta eu quam. In quis pulvinar urna. Cras at sem ac orci scelerisque semper. Ut id est nunc. Donec a ullamcorper nisi. Suspendisse eu volutpat leo."></textarea>
+								</div>
+								<div class="info">
+									<label>Texto decodificado:</label>		
+								</div>
+								<div class="text col-md-12">
+									<textarea name="text" placeholder="Message"></textarea>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<div class="container">
+				<div class="footer-content">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="col-md-4">
+								<div class="copyright-text">
+									<p>
+										Copyright &copy; 2084 <a href="#">Company Name</a>
+									</p>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="back-to-top">
+									<a href="#top">Back To Top</a>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="social-icons">
+									<ul>
+										<li>
+											<a href="#" class="#"><i class="fa fa-facebook"></i></a>
+										</li>
+										<li>
+											<a href="#" class="#"><i class="fa fa-twitter"></i></a>
+										</li>
+										<li>
+											<a href="#" class="#"><i class="fa fa-linkedin"></i></a>
+										</li>
+										<li>
+											<a href="#" class="#"><i class="fa fa-rss"></i></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Javascripts -->
+		<script>
+			function initialize() {
+				var mapProp = {
+					center : new google.maps.LatLng(40.7828839, -73.9652425),
+					zoom : 15,
+					scrollwheel : false,
+					mapTypeId : google.maps.MapTypeId.ROADMAP
+				};
+				var map = new google.maps.Map(document.getElementById("templatemo-map"), mapProp);
+			}
+
+
+			google.maps.event.addDomListener(window, 'load', initialize);
+			google.maps.event.addDomListener(window, 'resize', function() {
+				map.setCenter(center);
+			});
+		</script>
+		<script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/custom.js"></script>
+		<script src="js/filedrag.js"></script>
+		<script>
+			document.getElementById("uploadBtn").onchange = function() {
+				document.getElementById("uploadFile").value = this.value;
+			};
+		</script>
+	</body>
+</html>

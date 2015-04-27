@@ -29,44 +29,27 @@ public class ArchivoServlet extends HttpServlet{
 		String archivo = request.getParameter("q");
 
 		PrintWriter pw = response.getWriter();
-		String contextPath = getServletContext().getRealPath(File.separator);
+		//String contextPath = getServletContext().getRealPath(File.separator);
 		response.setCharacterEncoding("UTF-8");
-		File file;
-		if(!archivo.endsWith(".ocr"))
-		{
-			file = new File(contextPath+"archivos.html");
-		}
-		else
-		{
-			file = new File(contextPath+"archivosDecode.html");
-		}
-		FileInputStream fis = new FileInputStream(file);
+		response.setContentType("text/plain");
+//		File file;
+//		if(!archivo.endsWith(".ocr"))
+//		{
+//			file = new File(contextPath+"archivos.html");
+//		}
+//		else
+//		{
+//			file = new File(contextPath+"archivosDecode.html");
+//		}
+//		FileInputStream fis = new FileInputStream(file);
 
-		StringBuilder sb = new StringBuilder();
-		Carpeta carp = proc.darCarpetaRaiz();
-		generarCarpetas(sb, carp);
-		String relleno = sb.toString();
+		//StringBuilder sb = new StringBuilder();
+		//Carpeta carp = proc.darCarpetaRaiz();
+		//generarCarpetas(sb, carp);
+		//String relleno = sb.toString();
 
-		String relleno2 = proc.darArchivo(archivo).getTexto();
-
-		try(BufferedReader br = new BufferedReader(new InputStreamReader(fis, "UTF8")))
-		{
-			for(String linea = br.readLine();linea!=null;linea=br.readLine())
-			{
-				if(linea.contains("%s"))
-				{
-					pw.println(relleno);
-				}
-				else if(linea.contains("%p"))
-				{
-					pw.println("<textarea disabled name=\"text\" placeholder=\"Message\">"+relleno2+"</textarea>");
-				}
-				else
-				{
-					pw.println(linea);
-				}
-			}
-		}
+		String fileText = proc.darArchivo(archivo).getTexto();
+		pw.write(fileText);
 
 
 	}

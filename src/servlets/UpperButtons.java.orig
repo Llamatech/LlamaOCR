@@ -41,7 +41,10 @@ public class UpperButtons extends HttpServlet{
 			Carpeta carp = proc.darCarpetaRaiz();
 			generarCarpetas(sb, carp);
 			String relleno = sb.toString();
+<<<<<<< HEAD
 //			relleno = relleno.substring(0, relleno.length()-2);
+=======
+>>>>>>> 8c36b6a5ac97aa884f40b5158ef0ea0005cbb0bd
 
 			File file = new File(contextPath+"archivos.html");
 			FileInputStream fis = new FileInputStream(file);
@@ -82,11 +85,14 @@ public class UpperButtons extends HttpServlet{
 			response.getWriter().write(content);
 			//response.sendRedirect(response.encodeRedirectURL(contextPath));
 		}
+<<<<<<< HEAD
 		else if(request.getParameter("q").equals("buscar"))
 		{
 			String forward = "buscar.html";
 			response.sendRedirect(response.encodeRedirectURL(forward));
 		}
+=======
+>>>>>>> 8c36b6a5ac97aa884f40b5158ef0ea0005cbb0bd
 		
 		pw.close();
 
@@ -112,9 +118,15 @@ public class UpperButtons extends HttpServlet{
 	{
 		if(!carp.getNombre().equals("default"))
 		{
+<<<<<<< HEAD
 			wip.append("<li>");
 			wip.append("<input type=\"checkbox\" id=\"item-0\" /><label for=\"item-0\">"+carp.getNombre()+"</label>");
 			wip.append("<ul>");
+=======
+			wip.append("<li>/n");
+			wip.append("<input type=\"checkbox\" id=\"item-0\" /><label for=\"item-0\">"+carp.getNombre()+"</label>/n");
+			wip.append("<ul>/n");
+>>>>>>> 8c36b6a5ac97aa884f40b5158ef0ea0005cbb0bd
 		}
 
 		for(String s:carp.getCarpetasHijas())
@@ -125,15 +137,24 @@ public class UpperButtons extends HttpServlet{
 
 		for(String s: carp.getArchivos())
 		{
-			wip.append(String.format("<li><a id = \"%s\" nohref onClick=\"myFunction();\">%s</a></li>", s, s));
+<<<<<<< HEAD
+			wip.append("<li><a href=\"verArchivo?q="+ s +"\">"+s+"</a></li>" );
 		}
 //		wip.replace(wip.length()-1, wip.length(), "");
 		if(!carp.getNombre().equals("default"))
 		{
 			wip.append("</ul>");
 			wip.append("</li>");
+=======
+			wip.append("<li><a href=\"ArchivoServlet?q="+ s +"\">"+s+"</a></li>/n" );
 		}
-		
+
+		if(!carp.getNombre().equals("default"))
+		{
+			wip.append("</ul>/n");
+			wip.append("</li>/n");
+>>>>>>> 8c36b6a5ac97aa884f40b5158ef0ea0005cbb0bd
+		}
 	}
 
 }
